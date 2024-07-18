@@ -12,26 +12,36 @@
     font-family: "Roboto", "Arial", sans-serif;
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color 0.1s;
+  }
+
+  .subscribe-button:hover{
+    background-color: rgb(30, 30, 30);
   }
 </style>
 <style>
   .join-button{
-    border-color: rgb(41, 118, 211);
+    border-color: #065fd4;;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     background-color: rgb(255, 255, 255);
-    color: rgb(41, 118, 211);
+    color: #065fd4;;
     height: 36px;
     width: 60px;
     cursor: pointer;
     margin-right: 8px;
   }
+  .join-button:hover{
+    background-color: #065fd4;;
+    color: white;
+    transition: background-color 0.20s, color 0.20s;
+  }
 
 </style>
 <style>
   .tweet{
-    background-color: hsl(209, 100%, 58%);
+    background-color: rgb(41, 151, 255);
     color: white;
     border: none;
     height: 36px;
@@ -41,9 +51,12 @@
     line-height: 36px;
     font-weight: bold;
     cursor: pointer;
+    transition: box-shadow 0.2s;
   }
- </style>
-
+  .tweet:hover{
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+ </style>  
 
 <button class=" subscribe-button "> Subscribe </button>
 <button class="join-button">JOIN</button>
